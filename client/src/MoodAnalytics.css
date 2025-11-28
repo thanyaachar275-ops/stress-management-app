@@ -1,0 +1,23 @@
+.mood-analytics {
+  background: linear-gradient(to bottom right, #f5f8f6, #e7f2ef);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  color: #3e4a45;
+  font-family: "Poppins", sans-serif;
+}
+
+.mood-analytics h2 {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+  color: #506c64;
+}
+
+.mood-subtitle {
+  color: #748d84;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}

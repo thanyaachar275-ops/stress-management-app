@@ -1,0 +1,48 @@
+.music-section {
+  margin: 30px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background: #6c63ff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.music-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.music-card {
+  width: 200px;
+  cursor: pointer;
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.player {
+  margin-top: 20px;
+}

@@ -1,0 +1,23 @@
+/* Affirmation.css */
+.affirmation {
+  background: #f8fefb;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(125, 157, 156, 0.1);
+  width: 80%;
+  transition: 0.3s;
+}
+
+.affirmation h2 {
+  color: #7d9d9c;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.affirmation p {
+  font-size: 1.2rem;
+  color: #444;
+  font-weight: 500;
+}

@@ -1,0 +1,131 @@
+.hero-section {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #7d9d9c, #c8dbbe, #e4efe7);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 700px;
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero-btn {
+  background: #ffffff;
+  color: #3b4a3f;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero-btn:hover {
+  background: #c8dbbe;
+  transform: scale(1.05);
+}
+
+/* Glowing background animations */
+.hero-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  animation: moveGlow 10s infinite alternate ease-in-out;
+}
+
+.glow1 {
+  background: #c8dbbe;
+  top: 20%;
+  left: 10%;
+}
+
+.glow2 {
+  background: #7d9d9c;
+  bottom: 10%;
+  right: 15%;
+}
+
+/* Animations */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveGlow {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(30px, -30px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}

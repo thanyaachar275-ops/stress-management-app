@@ -1,0 +1,51 @@
+.breathing-exercise {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #2f3e46;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.breathing-exercise h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #aee6b8;
+  border-radius: 50%;
+  margin: 20px auto;
+  transition: all 4s ease-in-out;
+  box-shadow: 0 0 20px rgba(126, 213, 111, 0.5);
+}
+
+.circle.animate {
+  transform: scale(1.4);
+  background-color: #94d3ac;
+}
+
+button {
+  background-color: #7cc6b2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #6ab19d;
+  transform: scale(1.05);
+}
